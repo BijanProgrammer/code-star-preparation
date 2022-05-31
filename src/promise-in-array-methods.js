@@ -23,4 +23,4 @@ const main = async () => {
     console.log('after');
 };
 
-main().then(() => console.log('done!'));
+main().then(() => console.log('Done!'));
