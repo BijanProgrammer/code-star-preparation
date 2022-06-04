@@ -5,6 +5,8 @@ const users = [
     {name: 'sina', age: 22},
     {name: 'ali', age: 18},
     {name: 'reza', age: 27},
+    {name: 'amir', age: 22},
+    {name: 'babak', age: 18},
 ];
 
 const separator = (name) => {
@@ -95,6 +97,35 @@ const flatMap = () => {
     console.log('words', JSON.parse(JSON.stringify(words)));
 };
 
+const reduce = () => {
+    const numbers = [4, 8, 15, 16, 23, 42];
+
+    // let sum = 0;
+    // for (const x of numbers) {
+    //     sum = sum + x;
+    // }
+
+    const result = numbers.reduce((sum, x) => {
+        return sum + x;
+    });
+
+    console.log('result', JSON.parse(JSON.stringify(result)));
+};
+
+const complexReduce = () => {
+    const result = users.reduce((groups, user) => {
+        if (!groups[user.age]) {
+            groups[user.age] = [];
+        }
+
+        groups[user.age].push(user);
+
+        return groups;
+    }, {});
+
+    console.log('result', JSON.parse(JSON.stringify(result)));
+};
+
 const main = () => {
     separator('forEach');
     forEach();
@@ -125,6 +156,12 @@ const main = () => {
 
     separator('flatMap');
     flatMap();
+
+    separator('reduce');
+    reduce();
+
+    separator('complexReduce');
+    complexReduce();
 };
 
 main();
