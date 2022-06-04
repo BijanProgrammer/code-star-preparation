@@ -126,6 +126,24 @@ const complexReduce = () => {
     console.log('result', JSON.parse(JSON.stringify(result)));
 };
 
+const entries = () => {
+    for (let i = 0; i < users.length; i++) {
+        const user = users[i];
+    }
+
+    for (const user of users) {
+    }
+
+    for (const chiz of users.entries()) {
+        const index = chiz[0];
+        const user = chiz[1];
+    }
+
+    for (const [index, user] of users.entries()) {
+        console.log(`${index}.`, user);
+    }
+};
+
 const main = () => {
     separator('forEach');
     forEach();
@@ -162,6 +180,9 @@ const main = () => {
 
     separator('complexReduce');
     complexReduce();
+
+    separator('entries');
+    entries();
 };
 
 main();
