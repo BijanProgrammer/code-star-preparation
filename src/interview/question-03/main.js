@@ -2,7 +2,7 @@ const NAMES = ['bijan', 'milad', 'parsa', 'saba', 'saleh'];
 
 const listElement = document.querySelector('ul');
 
-const addNames = () => {
+const appendItemsToList = () => {
     NAMES.forEach(name => {
         const item = document.createElement("li");
         item.textContent = name;
@@ -11,7 +11,7 @@ const addNames = () => {
 }
 
 const main = () => {
-    addNames();
+    appendItemsToList();
 };
 
 main();
