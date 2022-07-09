@@ -1,0 +1,10 @@
+.box {
+    background-color: hsl(160, 70%, 50%);
+
+    position: fixed;
+    inset-block-start: var(--y);
+    inset-inline-start: var(--x);
+
+    width: 100px;
+    height: 100px;
+}
