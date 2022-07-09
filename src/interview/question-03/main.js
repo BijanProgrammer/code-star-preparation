@@ -4,9 +4,9 @@ const listElement = document.querySelector('ul');
 
 const addNames = () => {
     NAMES.forEach(name => {
-        const liElement = document.createElement("li");
-        liElement.textContent = name;
-        listElement.appendChild(liElement);
+        const item = document.createElement("li");
+        item.textContent = name;
+        listElement.appendChild(item);
     });
 }
 
