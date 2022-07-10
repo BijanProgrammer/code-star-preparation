@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul {
+    height: 100vh;
+
+    list-style: none;
+}
+
+li {
+    border: 1px dashed hsl(210, 30%, 40%);
+}
+
+li.small {
+    background-color: hsl(210, 30%, 23%);
+    height: calc(100vh / 35);
+}
+
+li.medium {
+    background-color: hsl(210, 30%, 20%);
+    height: calc(200vh / 35);
+}
+
+li.large {
+    background-color: hsl(210, 30%, 17%);
+    height: calc(300vh / 35);
+}
