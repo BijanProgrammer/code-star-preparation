@@ -1,0 +1,30 @@
+.box {
+    background-color: hsl(0, 0%, 0%);
+
+    position: fixed;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+
+    width: 100px;
+    height: 100px;
+}
+
+.box:nth-of-type(1) {
+    transform: translate(-350%, -50%);
+}
+
+.box:nth-of-type(2) {
+    transform: translate(-200%, -50%);
+}
+
+.box:nth-of-type(3) {
+    transform: translate(-50%, -50%);
+}
+
+.box:nth-of-type(4) {
+    transform: translate(100%, -50%);
+}
+
+.box:nth-of-type(5) {
+    transform: translate(250%, -50%);
+}
