@@ -1,0 +1,9 @@
+/* write your code here ... */
+
+#married-input + label + label + input {
+    pointer-events:none;
+}
+
+#married-input:checked + label + label + input {
+    pointer-events: auto;
+}
